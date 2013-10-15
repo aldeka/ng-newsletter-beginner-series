@@ -10,7 +10,11 @@
   <body>
 
     <div ng-controller="PlayerController">
-    {{ programs }}
+      <ul id="programs_list" class="">
+        <li ng-repeat="program in programs">
+          <span npr-link play='play(program)' ng-model="program"></span>
+        </li>
+      </ul>
     </div>
 
     <script>
