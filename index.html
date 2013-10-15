@@ -8,6 +8,25 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css"/>
   </head>
   <body>
+    <!--<h1>{{ name }}</h1>
+
+    <div ng-controller="MyController">
+      {{ person.name }}
+    </div>
+
+    <div ng-controller="ParentController">
+      <div ng-controller="ChildController">
+        <input type="text" ng-model="person.name" placeholder="Name"></input>
+        <a ng-click="sayHello()">Say hello</a>
+      </div>
+      {{ person }}
+    </div>-->
+
+    <div ng-controller="PlayerController">
+      <button ng-click="play()" class="button" ng-show="!playing">Play</button>
+      <button ng-click="stop()" class="button alert" ng-show="playing">Stop</button>
+      Playing audio: <b>{{ playing }}</b>
+    </div>
 
     <script>
       document.write('<script src=js/vendor/'
